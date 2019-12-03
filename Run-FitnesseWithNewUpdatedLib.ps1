@@ -1,2 +1,2 @@
-dotnet publish .\AdapterLib\ -c Release -r win-x64 -o lib_publish
-java -jar .\fitnesse-standalone.jar -d .\FitNesseRoot -f .\plugins.properties -p 8080 -c "AfmgFitnesseTests.EaseTests.Regression.Application?suite&format=text"
+dotnet publish .\AdapterLib\ -c Release -o lib_publish
+java -jar .\fitnesse-standalone.jar -d .\FitNesseRoot -f .\plugins.properties -p 8080 #-c "FrontPage.FirstLevelSuite?suite&format=text"

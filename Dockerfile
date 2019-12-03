@@ -12,12 +12,11 @@ RUN cinst jdk8 -y
 
 COPY ./fitnesse-standalone.jar /work/
 
-COPY ./fitsharp ./work/fitsharp
+COPY ./fitsharp.2.7.1/ ./work/fitsharp
 
 #RUN netsh advfirewall firewall add rule name="Fitsharp" dir=in action=allow program="C:\\work\\fitsharp\\x64\\Release\\Runner.exe" enable=yes
 
 COPY ./lib_publish /work/lib_publish
-COPY ./console_publish /work/console_publish
 
 COPY ./container_plugins.properties /work/plugins.properties
 
