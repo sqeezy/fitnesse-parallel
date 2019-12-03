@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>FitSharp</id>
+    <version>2.7.1</version>
+    <title>fitSharp</title>
+    <authors>Mike Stockdale</authors>
+    <owners>mikestockdale</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="file">license\license.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <projectUrl>http://fitsharp.github.io/</projectUrl>
+    <description>fitSharp is a set of open-source functional testing tools for .NET, inspired by the Framework for Integrated Test</description>
+    <releaseNotes>See https://fitsharp.github.io/FitSharp/ReleaseInformation.html</releaseNotes>
+    <copyright>Copyright © 2019 Syterra Software Inc. All rights reserved.</copyright>
+    <tags>fit fitnesse testing</tags>
+    <references>
+      <reference file="fitsharp.dll" />
+      <reference file="fit.dll" />
+    </references>
+  </metadata>
+</package>
