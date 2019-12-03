@@ -1,0 +1,6 @@
+!|Import   |
+|AdapterLib|
+
+|Adapter            |
+|A|B|Add|Sub|Mul|Div|
+|4|5|9  |-1 |20 |0.8|

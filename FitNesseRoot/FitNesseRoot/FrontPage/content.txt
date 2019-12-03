@@ -1,0 +1,8 @@
+!1 Test suite X
+!contents -R2 -g -p -f -h
+
+!define TEST_SYSTEM {slim} 
+!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner %p}
+TEST_RUNNER = ${TEST_RUNNER}
+
+!path ${lib_path} 
