@@ -1,4 +1,4 @@
-dotnet publish .\AdapterLib\ -c Release -r win-x86 -o lib_publish
+dotnet build .\AdapterLib\ -c Release -o lib_publish
 docker build -t fitnesse:latest .
 "====================== In Container Run ======================"
 docker run --rm -v "$(Resolve-Path ./FitNesseRoot):C:/work/Fitnesse_Wiki" fitnesse -c "FrontPage.FirstLevelSuite?suite&format=text"

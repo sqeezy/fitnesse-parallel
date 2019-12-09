@@ -3,7 +3,7 @@
 
 !define TEST_SYSTEM {slim} 
 !define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner %p}
-TEST_RUNNER = ${TEST_RUNNER}
+!define TEST_RUNNER {${fitsharp}}
 
 !path ${lib_path}
 #!path ${lib_path_absolute}

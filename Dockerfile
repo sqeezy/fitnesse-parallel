@@ -1,12 +1,9 @@
-FROM mcr.microsoft.com/dotnet/framework/sdk:4.8
+FROM openjdk:14-windowsservercore-1809
 
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]
 
-RUN Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-RUN cinst jdk8 -y
-
 COPY ./fitnesse-standalone.jar /work/
-COPY ./fitsharp.2.7.1/ ./work/fitsharp
+COPY ./Fitsharp/x64/Release ./work/fitsharp
 COPY ./lib_publish /work/lib_publish
 COPY ./container_plugins.properties /work/plugins.properties
 
