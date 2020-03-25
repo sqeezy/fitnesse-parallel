@@ -1,0 +1,5 @@
+<suiteConfig>
+    <Settings>
+       <Runner>fitSharp.Slim.Service.Runner</Runner>
+    </Settings>
+</suiteConfig>

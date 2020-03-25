@@ -2,8 +2,11 @@
 !contents -R2 -g -p -f -h
 
 !define TEST_SYSTEM {slim} 
-!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner %p}
-!define TEST_RUNNER {${fitsharp}}
+#!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner %p}
+#!define TEST_RUNNER {${fitsharp}}
+
+!define COMMAND_PATTERN {%m .\Fitsharp\lib\netcoreapp3.1\Runner.dll -c suiteconfig.xml %p}
+!define TEST_RUNNER {dotnet}
 
 !path ${lib_path}
 #!path ${lib_path_absolute}
