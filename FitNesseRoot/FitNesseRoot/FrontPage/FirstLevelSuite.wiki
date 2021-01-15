@@ -5,7 +5,7 @@
 #!define COMMAND_PATTERN {%m -r fitSharp.Slim.Service.Runner %p}
 #!define TEST_RUNNER {${fitsharp}}
 
-!define COMMAND_PATTERN {%m .\Fitsharp\lib\netcoreapp3.1\Runner.dll -c suiteconfig.xml %p}
+!define COMMAND_PATTERN {%m .\Fitsharp\lib\net5.0-windows\Runner.dll -c .\Fitsharp\suiteconfig.xml %p}
 !define TEST_RUNNER {dotnet}
 
 !path ${lib_path}
